@@ -1,0 +1,93 @@
+---
+title:  5th Languages, Architectures, and Tools for Heterogeneous Computing (LATHC) Workshop 2027
+banner-image-list:
+    - url: img/SLC2.jpg
+    - url: img/SLC2.jpg
+    - url: img/SLC3.jpg
+---
+
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" defer></script>
+<script src="{{ site.baseurl }}/js/lightsliderrun.js" defer></script>
+
+<div style="padding-bottom:0;" class="jumbotron">
+  <div class="container">
+    <ul id="lightSlider">
+      {% for image in page.banner-image-list %}
+      <li style="overflow:hidden">
+        <div style="height:auto; display:flex; align-item:center;">
+          <img style="width:100%; height:auto; align-self: center;" src="{{ image.url }}">
+        </div>
+      </li>
+      {% endfor %}
+      {% for image in site.static_files %}
+      {% if image.path contains 'img/banner/' %}
+      <li>
+        <img src="{{ site.baseurl }}{{ image.path }}">
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<section class="no-top-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="section-heading" style="margin-bottom:.2em;">
+          5th Languages, Architectures, and Tools for Heterogeneous Computing (LATHC) Workshop 2027 
+        </h1>
+	<p class="lead section-lead"><b>Room: TBD<br>
+	In conjunction with <a href="https://conf.researchr.org/home/cgo-2027">IEEE/ACM International Symposium on Code Generation and Optimization (CGO)</a>, Salt Lake City, Utah, USA</b></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="panel panel-default">
+
+	<div class="panel-heading"><b>Important Dates</b></div>
+
+          <table class="table">
+            <tbody>
+              <tr>
+                <td><!--<s>-->Abstract Submission<!--</s>--></td><td>January 15 2027</td>
+              </tr>
+              <tr>
+                <td>Notification</td><td>January 22 2027</td>
+	      </tr>
+              <tr>
+                <td>Workshop Date</td><td>Sunday, March 21 </td>
+	      </tr>
+
+	      
+            </tbody>
+          </table>
+        </div> <!-- /.panel -->
+      </div> <!-- /.col-md-6 -->
+
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading"><b>Latest Updates</b></div>
+
+          <table class="table">
+	    <tbody>
+	      <tr><td><b>18 November 2027:</b> Workshop Proposal Accepted</td></tr>	      
+	      <tr><td><b>18 November 2027:</b> Workshop Webpage and CFP posted</td></tr>
+<!--	 	     
+	      <tr><td><b>20 January 2027:</b> Notifications sent to authors</td></tr>
+	      <tr><td><b>16 February 2027:</b> Program Available</td></tr> 
+-->
+            </tbody>
+          </table>
+        </div> <!-- /.panel -->
+      </div> <!-- /.col-md-6 -->
+    </div> <!-- /.row -->
+<!--
+    Sponsor:<br>
+
+    <img src="img/Huawei_logo.png" alt="Huawei" width="22%">
+-->
+</section>
+    

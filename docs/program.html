@@ -1,0 +1,227 @@
+---
+title: CDP Program
+---
+
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+<h1>Program</h1>
+
+	<h2> 01 February 2026</h2><br>
+	<h4>Room: Bronte</h4>
+	
+<table class="program"><tbody>
+    <tr>
+      <td><b>Session 1:</b></td> <td>  Chair: <b>J. Nelson Amaral</b>, University of Alberta<td>
+    </tr>
+    
+    <tr>
+      <td> 8:45 - 9:20 </td> <td> <a href="#Spyre">When Dataflow Architectures Meet Compilation: Register Spill-Free Code Generation for IBM Spyre AI Accelerator</a>
+	  &#8212; Prasanth Chatarasi</td> 
+        </tr>
+    <tr>
+      <td>9:20 - 9:55</td> <td> <a href="#MDHATF"> AI Compilation for Heterogeneous Targets via MDH and ATF</a>  &#8212; Ari Rasch , Richard Schulze</td>
+    </tr>
+    <tr>
+      <td>9:55 - 10:30</td> <td><a href="#CHALLENGES">Challenges and Opportunities in Programming and Compiler Technologies in the Era of Intelligent Computing</a>  &#8212; Yaoqing Gao</td>
+    </tr>
+
+    <tr>
+      <td>10:30-11:00</td> <td><b>Nutrition Break</b></td>
+    </tr>
+
+    <tr>
+      <td><b>Session 2:</b></td> <td> Chair: <b>Prasanth Chatarasi</b>, IBM T.J. Watson Centre<td>
+    </tr>
+    
+    <tr>
+      <td>11:00 - 11:30</td> <td> <a href="#SWARM">SWARM: Multi-Agent Intelligence for Adaptive Workflow Scheduling in Heterogeneous Computing Environments</a>  &#8212; Ewa Deelman</td>
+          </tr>
+    <tr>
+      <td>11:30 - 11:55</td> <td> <a href="#Fusion">Flattening Optimization to Expose More Opportunities for Operator Fusion</a>  &#8212; Yan Zhang, Hocky Yudhiono</td>
+    </tr>
+    <tr>
+      <td>11:55 - 12:20</td> <td> <a href="#PolyUFC">PolyUFC: Polyhedral Compilation Meets Roofline Analysis for Uncore Frequency Capping</a>  &#8212; Nilesh Rajendra Shah, Ramakrishna Upadrasta</td>
+    </tr>
+    <tr>
+      <td>12:20 - 12:45</td> <td> <a href="#AgenticAI">Efficient and Scalable Agentic AI with Heterogeneous Systems</a>  &#8212; Tom St. John, Zain Asgar, Omid Azizi</td>
+    </tr>
+ 
+    <tr>
+      <td>12:45 - 1:45</td> <td><b>Lunch</b></td>
+    </tr>
+
+    <tr>
+      <td><b>Session 3:</b></td> <td> Chair: <b> Yaoqing Gao</b>, Huawei Technologies Canada<td>
+    </tr>
+    
+        <tr>
+      <td>1:45 - 2:20</td> <td> <a href="#Prediction">Mitigating Branch Mispredictions and Measurement Biases Through Code Alignment Techniques</a>  &#8212; Henry Kao, Bryan Chan</td>
+          </tr>
+    <tr>
+      <td>2:20 - 2:55</td> <td> <a href="#PTO">Synergizing Parallel Tile Operation (PTO) and Compiler Tile Fusion: A New Paradigm for DSA Acceleration</a>  &#8212; Wenbo Sun, Ruoyu Zhou, Reza Azimi, Ka Lok Chan </td>
+    </tr>
+    <tr>
+      <td>2:55 - 3:30</td> <td> <a href="#HLS">Fast and Accurate IR-Driven Simulation for HLS System Design: Updates from the Bambu Framework</a>  &#8212; Michele Fiorito, Serena Curzel, Fabrizio Ferrandi </td>
+    </tr>
+
+    <tr>
+      <td>3:30 - 4:00</td> <td><b>Nutrition Break</b></td>
+    </tr>
+
+    
+    <tr>
+      <td><b>Session 4:</b></td> <td> Chair: <b>Henry Kao</b>, Huawei Technologies Canada<td>
+    </tr>
+    
+    <tr>
+      <td>4:00 - 4:30</td> <td> <a href="#inMemory">Compilation for heterogeneous near-memory and in-memory computing architectures</a>  &#8212; Asif Ali Khan, Hamid Farzaneh, Joao Paulo Cardoso de Lima, Jeronimo Castrillon</td>
+          </tr>
+    <tr>
+      <td>4:30 - 4:55</td> <td> <a href="#Chapel"> Extending Chapel Programming Language for Multi-Node, Multi-GPU Programming with GPU-Initiated PGAS Communication</a>  &#8212; Sosuke Hosokawa, Kenjiro Taura</td>
+    </tr>
+    <tr>
+      <td>4:55 - 5:20</td> <td> <a href="#Fork-Join">A GPU-Resident Fork-Join Task-Parallel Runtime</a>  &#8212; Yuki Maeda, Kenjiro Taura</td>
+    </tr>
+    <tr>
+      <td>5:20 - 5:45</td> <td> <a href="#Chemical">A Mathematical Framework for Thermodynamic Computing with Applications to Chemical Reaction Networks</a>  &#8212; William R. Cannon, Connah Johnson, Nicolas Bohm Agostini, Antonino Tumeo</td>
+    </tr>
+  </table>
+
+  <p> <a name="Spyre">&nbsp;</a></p>
+  <p><b>When Dataflow Architectures Meet Compilation: Register Spill-Free Code Generation for IBM Spyre AI Accelerator</b><br>
+  Prasanth Chatarasi</p>
+
+   <p> <b>Abstract:</b> Achieving high efficiency in modern AI systems rests on three tightly coupled pillars: approximate algorithms, compilers, and hardware acceleration.  In this talk, I highlight recent advancements at IBM across all three dimensions through the introduction of the IBM Spyre AI accelerator. IBM Spyre adopts a dataflow architecture to achieve high compute throughput (TOPS) and energy efficiency (TOPS/W), using wide data paths and hierarchical on-chip memories to efficiently feed dense compute arrays. To minimize control overhead, Spyre employs a lightweight control path and omits conventional features such as instruction caches and execution stacks. While effective for performance and efficiency, these choices impose strict compiler constraints: complex kernels must fit within limited instruction buffers and a small scalar register file, with no support for spilling to memory.</p>
+
+  <p>I present a step toward register spill-free compilation for Spyre through a live-range reduction optimization based on affine expression propagation. This approach performs a global compiler analysis that represents values as affine functions of in-scope variables, enabling safe symbolic re-materialization at use sites without introducing additional instructions. The result is significantly shorter live ranges and reduced register pressure, achieved without increasing code size or runtime overhead. Evaluated within the IBM Spyre compiler, the technique enables spill-free code generation across a range of transformer and CNN workloads, with most kernels using less than 50% of the available registers.</p>
+
+  <p> <b>Biography</b>: Prasanth Chatarasi is a Staff Research Scientist at IBM T.J. Watson Research Center where he leads research and development of code generation for IBM’s Spyre accelerator. He focuses on compiler optimizations, dataflow architectures, and hardware–software co-design for next-generation AI systems. Prasanth received his Ph.D. in Computer Science from Georgia Institute of Technology, where he worked on advancing compilation techniques for general-purpose and domain-specific for high-performance systems, and his M.S. Thesis on polyhedral optimizations for explicitly parallel programs from Rice University. He has published in major compiler and architecture venues (e.g., ISCA, MICRO, CGO, PACT), holds multiple patents in compiler technology, and actively collaborates with academic partners on various aspects in compilers.</p>
+
+<p> <a name="MDHATF">&nbsp;</a></p>
+<p><b> AI Compilation for Heterogeneous Targets via MDH and ATF</b><br>
+Ari Rasch , Richard Schulze</p>
+
+<p><b>Abstract</b>:	This talk presents a formally grounded AI compiler designed explicitly for heterogeneous computing. Built on our algebraic formalism of Multi-Dimensional Homomorphisms (MDH) (TOPLAS’24, https://dl.acm.org/doi/10.1145/3665643), which provides a unified foundation for describing and transforming data-parallel computations, our approach enables a correctness-preserving representation of a broad range of AI operators—including linear algebra routines, point-wise operations, and stencil computations such as convolutions—across diverse architectures.</p>
+
+<p>Our MDH-based compiler currently targets GPUs and CPUs and is engineered to extend naturally to emerging accelerators, making heterogeneous execution a first-class design objective. Its fully automatic optimization engine follows the methodology of our Auto-Tuning Framework (ATF) (TACO’21, https://dl.acm.org/doi/10.1145/3427093), deriving and exploring optimization spaces directly from MDH semantics.</p>
+
+<p>We will discuss performance results showing that our approach matches or surpasses state-of-the-art systems on key AI workloads, outperforming TVM, polyhedral compilers such as PPCG and Pluto, and even highly optimized vendor libraries including NVIDIA cuBLAS/cuDNN and Intel oneMKL/oneDNN on both GPU and CPU platforms.</p>
+
+<p>The talk will also highlight work-in-progress on our Python-based compiler implementation, covering its eDSL, semantics-aware code generation pipeline, and showing how MDH and ATF jointly enable a principled and extensible path toward high-performance heterogeneous computing in a concrete, practical compiler implementation.</p>
+
+<p><a name="CHALLENGES">&nbsp;</a></p>
+<p><b>Challenges and Opportunities in Programming and Compiler Technologies in the Era of Intelligent Computing</b><br>
+Yaoqing Gao</p>
+
+<p><b>Abstract</b>: Advances in intelligent computing are reshaping the entire landscape of programming languages and compiler technologies. Specialized hardware architectures, increasingly diverse programming models, and rapidly evolving development paradigms are redefining the role and value of these foundational technologies. This transformation is creating extraordinary opportunities for innovation in both AI for Systems and Systems for AI, while simultaneously introducing new challenges for researchers, engineers, and practitioners.</p>
+
+<p>This talk explores the key trends including multi‑agent programming,  AI‑assisted code generation and optimization, and beyond. We will also present Huawei’s latest collaborative innovations across these domains, including progress on the BiSheng Compiler, the Cangjie Programming Language, and the BitFun IDE. The talk concludes with our forward‑looking vision and a discussion of the critical challenges that must be addressed to fully unlock the potential of next‑generation programming and compiler technologies.</p>
+    
+<p><a name="SWARM">&nbsp;</a></p>
+<p><b>SWARM: Multi-Agent Intelligence for Adaptive Workflow Scheduling in Heterogeneous Computing Environments</b></a><br>
+Ewa Deelman</p>
+
+<p><b>Abstract</b>:	As scientific applications increasingly span HPC clusters, cloud resources, GPUs, and edge systems, managing workflows across these heterogeneous environments has become a critical challenge. Traditional centralized workflow scheduling approaches struggle to adapt to dynamic resource availability, varying data locality, and performance heterogeneity. To address these limitations, we present SWARM, a multi-agent orchestration framework that enables decentralized, adaptive workflow scheduling for heterogeneous computing systems.</p>
+
+<p>SWARM’s architecture decomposes the scheduling problem into interdependent components — job selection, job scheduling, consensus algorithms, and overlay network formation. It integrates simulation, emulation, and system prototyping to evaluate algorithmic and architectural trade-offs on real systems including the NSF FABRIC testbed and DOE computing facilities at ANL, LBNL, and ORNL. Through this layered methodology, SWARM enables systematic exploration of both mathematical formulations and intelligent coordination strategies for distributed resource management.</p>
+
+<p>Our results highlight several key findings:
+<ul>
+<li> Swarm intelligence algorithms, while promising in principle, often fail to yield optimal results for traditional job scheduling problems without domain adaptation.</li>
+<li> Large Language Models (LLMs), when guided with sophisticated prompting, can assist in job scheduling by supporting multi-criteria decision-making where criteria evolve dynamically. </li>
+<li> Greedy algorithms outperform classical consensus protocols for distributed job selection, balancing convergence time and fairness. </li>
+<li> Ring-building algorithms enhanced through Q-learning significantly improve the diameter and resilience of overlay networks over traditional methods. </li>
+<li> Agentic frameworks can integrate information gathering, job submission, and adaptive data management, enabling self-configuring scheduling systems capable of real-time adaptation. </li>
+</ul></p>
+  
+<p>By blending concepts from distributed systems, reinforcement learning, and AI-driven reasoning, SWARM advances the design of self-managing heterogeneous systems that dynamically coordinate resources under uncertainty. This approach provides a new architectural foundation for heterogeneous computing — one that prioritizes adaptability, decentralized intelligence, and co-evolution between scheduling algorithms and system state.</p>
+
+<p><a name="Fusion">&nbsp;</a></p>
+<p><b>Flattening Optimization to Expose More Opportunities for Operator Fusion</b></a><br>
+Yan Zhang, Hocky Yudhiono</p>
+
+<p><b>Abstract</b>: The flattening optimization simplifies computational graphs by reducing the dimensions of intermediate tensors, which in turn exposes more opportunities for subsequent operator fusion. Operator fusion is a crucial optimization of modern AI compiler, as it dramatically improves computational performance by maximizing data locality, minimizing intermediate memory usage, and reducing the overhead associated with memory bandwidth. However, a significant practical barrier to applying operator fusion arises from incompatible tensor shapes, where the data layout or dimensionality prevents operations from being merged into a single efficient one.<p>
+
+<p>In this talk, we address this key challenge with an approach to applying flattening optimization to these problematic tensor shapes. By strategically reshaping tensors before fusion attempts, we remove the structural obstacles that block fusion optimization. This process not only makes operator fusion possible where it was previously infeasible but also does so in a way that preserves semantic correctness and often yields substantial performance gain. We will illustrate this with examples from domains such as deep learning model compilation, demonstrating how this combined strategy unlocks new levels of efficiency in tensor-centric programs.</p>
+
+
+<p><a name="PolyUFC">&nbsp;</a></p>
+<p><b>PolyUFC: Polyhedral Compilation Meets Roofline Analysis for Uncore Frequency Capping</b></a><br>
+Nilesh Rajendra Shah, Ramakrishna Upadrasta</p>
+
+<p><b>Abstract</b>:	We present PolyUFC, an MLIR based compilation flow for uncore frequency capping that combines (performance and power) roofline analyses and polyhedral compilation-based static analysis
+for characterization of affine programs.
+We introduce a parametric mathematical model that links operational intensity and uncore frequency to derive frequency caps, validated through empirical evaluation on real hardware.
+By embedding these caps into Pluto optimized code generated by Polygeist, we achieve improvements in Energy Delay Product (EDP) up to 42% on compute-bound, and up to 54% on bandwidth-bound programs---carefully selected from ML-models from vision/NLP domains and PolyBench---over Intel UFS driver.
+Our framework is retargetable across multiple micro-architectures; and can handle multiple optimization goals like performance, energy and EDP, and is applicable across inter/intra dialects.</p>
+
+<p><a name="AgenticAI">&nbsp;</a></p>
+<p><b>Efficient and Scalable Agentic AI with Heterogeneous Systems</b></a><br>
+Tom St. John, Zain Asgar, Omid Azizi</p>
+
+<p><b>Abstract</b>: AI agents are emerging as a dominant workload in a wide range of applications, promising to be the vehicle that delivers the promised benefits of AI to enterprises and consumers. Unlike conventional software or static inference, agentic workloads are dynamic and structurally complex. These agents are often directed graphs of compute and I/O operations that span multi-modal data input and conversion (e.g. speech to text), data processing and context gathering (e.g. privacy filtering, vector DB lookups), LLM inferences, tool calls, etc. To scale AI agent usage, we need efficient and scalable deployment and agent-serving infrastructure. Today, however, the vast majority of these workloads are deployed on homogeneous, high-end, single-vendor infrastructure, which can often be quite expensive and limits broad rollout.</p>
+
+<p>To tackle this challenge, we present a system design for dynamic orchestration of AI agent workloads on heterogeneous compute infrastructure spanning CPUs and accelerators, both from different vendors and across different performance tiers within a single vendor. The system delivers several building blocks: a framework for planning and optimizing agentic AI execution graphs using cost models that account for compute, memory, and bandwidth constraints of different HW; an MLIR-based compilation system that can decompose AI agent execution graphs into granular operators and generate code for different HW options; and a dynamic orchestration system that can place the granular components across a heterogeneous compute infrastructure and stitch them together while meeting an end-to-end SLA. Our design thus performs a system-level TCO optimization and our results show that leveraging a heterogeneous infrastructure can deliver significant TCO benefits.</p>
+
+<p><a name="Prediction">&nbsp;</a></p>
+<p><b>Mitigating Branch Mispredictions and Measurement Biases Through Code Alignment Techniques</b></a><br>
+Henry Kao, Bryan Chan</p>
+
+<p><b>Abstract</b>: We find that seemingly innocuous variations to the alignment of code may affect the performance of an application. A transformation applied to one region of code can affect the alignment of code that is placed after in the final binary. This can be problematic as performance conclusions may be misattributed to the wrong origins (e.g., performance difference is caused by the change in alignment of subsequently placed code, and not from the original transformation itself) -- a phenomenon known as measurement bias. A feature available in most compilers is forcing the alignment of code to power-of-two boundaries. Although it may remove a source of measurement bias, it can also degrade the performance of the application. Empirical measurements suggest performance differences due to code alignment stems from changing branch prediction behavior. We present a work-in-progress compiler optimization that attempts to predictably align code to mitigate measurement bias while aiding the CPU's branch predictor to maintain/improve performance.</p>
+
+<p><a name="PTO">&nbsp;</a></p>
+<p><b>Synergizing Parallel Tile Operation (PTO) and Compiler Tile Fusion: A New Paradigm for DSA Acceleration</b></a><br>
+Wenbo Sun, Ruoyu Zhou, Reza Azimi, Ka Lok Chan </p>
+
+<p><b>Abstract</b>: Domain-Specific Accelerators (DSAs) have become the backbone of high-performance computing and AI workloads, yet efficient coordination between hardware-specific instruction sets and compiler optimizations remains a critical bottleneck. This talk focuses on a novel paradigm for DSA acceleration by coordinating Parallel Tile Operation (PTO)—a tile-centric virtual instruction set—and tile fusion with BiSheng compiler. PTO abstracts complex DSA hardware (e.g., CUBE, MTE, VEC accelerators) into manageable micro-kernels, while tile fusion via BiSheng compiler optimizes these micro-kernels by merging fragmented operations, eliminating pipeline bubbles, and maximizing memory hierarchy utilization.
+We first elaborate on the coordination mechanism between PTO and compiler tile fusion: how tile abstraction serves as a unified interface to bridge software-level programming and hardware-level constraints, and how compiler-driven fusion strategies enhance the efficiency of PTO micro-kernel execution. We then present practical optimization techniques, including synchronization-aware scheduling and ping-pong buffer design, which further amplify the synergy between PTO and tile fusion for latency-sensitive workloads. Empirical evaluations on the Ascend architecture, using representative operators such as GEMM and Softmax, demonstrate that our coordinated approach significantly improves Memory Utilization and reduces execution latency compared to non-fused PTO implementations.
+This talk provides insights into bridging hardware-specific instruction design and compiler optimization, offering a scalable solution for high-performance DSA programming. It targets researchers and engineers interested in code generation, heterogeneous computing, and DSA acceleration, fostering discussions on advancing HW/SW co-design paradigms for next-generation accelerators.<p>
+
+
+<p><a name="HLS">&nbsp;</a></p>
+<p><b>Fast and Accurate IR-Driven Simulation for HLS System Design: Updates from the Bambu Framework</b></a><br>
+Michele Fiorito, Serena Curzel, Fabrizio Ferrandi </p>
+
+<p><b>Abstract</b>: High-Level Synthesis (HLS) has become an essential component for the design of custom accelerators in heterogeneous computing systems, yet existing verification flows remain slow, fragmented, and unable to model host–accelerator interaction. This talk presents recent developments in the open-source Bambu HLS tool that improve upon standard co-simulation methods in terms of simulation speed and system modeling capabilities, complementing the hands-on exercises of the SODA tutorial on the previous day with a presentation of methodological aspects. Bambu is now able to generate a cycle-accurate C model derived from the scheduled HLS intermediate representation (IR), and to run an automated HW/SW co-simulation framework based on inter-process communication. The approach enables fast and accurate performance estimation, and allows system-level validation without any manual development of RTL testbenches. Experimental results show that our methodology is, on average, 7.0x faster than a state-of-the-art method and 36.2x faster than RTL simulation in terms of simulated cycles per second, with high accuracy and minimal memory overhead. This work demonstrates how meaningful advances in HLS simulation capabilities can dramatically improve design and verification productivity for heterogeneous systems, and that open-source infrastructures are an invaluable foundation on which new methodologies can be explored, tested, and continuously improved through community-driven research.</p>
+
+<p><a name="inMemory">&nbsp;</a></p>
+<p><b>Compilation for heterogeneous near-memory and in-memory computing architectures</b></a><br>
+Asif Ali Khan, Hamid Farzaneh, Joao Paulo Cardoso de Lima, Jeronimo Castrillon</p>
+
+<p><b>Abstract</b>: Conventional general-purpose computing systems are struggling to keep up with the conflicting demands for both power efficiency and performance optimization required by today's applications. As a result, we have witnessed a notable increase in both specialized domain-specific accelerators and unconventional near-memory and in-memory computing systems in recent years. In specific application areas with high memory demands, such as machine learning, these specialized systems have shown remarkable improvements in performance and energy efficiency. However, for applications that rely heavily on computational power, CPU/GPU systems still maintain their undisputed advantage. As a result, the future of computing systems is expected to be predominantly heterogeneous. While these novel heterogeneous architectures sound intriguing and promising, they present unique challenges. Most importantly, they require new tools and novel programming frameworks that enable better exploitation of these systems and make them accessible to a wider audience. In this presentation, I will focus on the programmability aspects of these architectures. I will discuss how high-level compiler frameworks can play a pivotal role in facilitating the design exploration process for these systems and how these frameworks can be combined with cost models to efficiently map workloads onto these devices, fully unlocking their potential.</p>
+
+
+<p><a name="Chapel">&nbsp;</a></p>
+<p><b>Extending Chapel Programming Language for Multi-Node, Multi-GPU Programming with GPU-Initiated PGAS Communication</b></a><br>
+Sosuke Hosokawa, Kenjiro Taura</p>
+
+<p><b>Abstract</b>: As GPU-accelerated systems increasingly adopt multi-node, multi-GPU architectures, GPU-initiated communication within Partitioned Global Address Space (PGAS) models has emerged as a promising approach to developing efficient programs that involve inter-GPU data transfers. However, existing PGAS libraries targeting GPUs, such as NVSHMEM, predominantly employ symmetric memory-based programming models derived from OpenSHMEM, which require programmers to explicitly manage memory allocation, synchronization, and communication between GPUs. To address this limitation, we extend Chapel, a high-level parallel programming language, to support GPU-initiated PGAS communication. Chapel's native PGAS model provides a global-view programming abstraction that hides the complexity of distributed memory management from users. By integrating GPU-initiated communication capabilities into this high-level framework, our extension enables programmers to write efficient multi-GPU programs without explicitly handling inter-GPU communication details. In this presentation, we describe the design and implementation of our extension to the Chapel compiler and runtime system. We evaluate the performance of our approach using various benchmarks and demonstrate that our high-level abstraction achieves competitive performance while significantly reducing programming complexity compared to existing low-level approaches.</p>
+
+
+<p><a name="Fork-Join">&nbsp;</a></p>
+<p><b>A GPU-Resident Fork-Join Task-Parallel Runtime</b></a><br>
+Yuki Maeda, Kenjiro Taura</p>
+
+<p><b>Abstract</b>: In recent years, large-scale parallel computation on GPUs has become increasingly important across a wide range of domains, including machine learning and graph analytics. However, GPUs are fundamentally designed for regular data-parallel workloads and are not well suited for irregular task execution that requires dynamic task creation and synchronization. As a result, runtime systems that support irregular task-parallelism directly on GPUs remain limited. In particular, few GPU-resident systems allow programmers to express task-parallelism in a simple manner comparable to OpenMP on CPUs, and, to our knowledge, no existing system provides a general-purpose fork-join task-parallel model that executes entirely within the GPU.</p>
+
+<p>This work proposes a GPU-resident runtime that supports fork-join task-parallelism. The system executes a persistent kernel that performs dynamic task generation and execution, and supports two worker granularities: thread blocks and individual threads. Load balancing is achieved through work-stealing, enabling significantly higher scalability with increasing worker counts compared with a single-queue approach. For thread-level workers, we further introduce an optional mechanism that allows programmers to separate task queues, thereby avoiding warp divergence caused by mixing heterogeneous task types within a single warp.</p>
+
+<p>Evaluation on representative irregular applications shows that our runtime outperforms CPU-based task-parallel execution (OpenMP) in many cases. In particular, for large problem sizes, it achieves substantially higher performance than its CPU counterparts.</p>
+
+<p>Furthermore, fork-join model on GPU inherently requires stateful control-flow transitions. To hide this complexity from programmers, we aim to extend the Clang frontend and provide an API that allows fork-join structures to be expressed easily.</p>
+
+
+<p><a name="Chemical">&nbsp;</a></p>
+<p><b>A Mathematical Framework for Thermodynamic Computing with Applications to Chemical Reaction Networks</b></a><br>
+William R. Cannon, Connah Johnson, Nicolas Bohm Agostini, Antonino Tumeo</p>
+
+<p><b>Abstract</b>: The widespread adoption of energy-intensive computing applications has led to a growing need for energy-efficient computing approaches. Thermodynamic computing offers a promising approach for low-energy computation by leveraging the intrinsic computational capabilities of physical, chemical, or biological systems. However, the mathematical foundations of thermodynamic computing require further development to fully realize the potential energy efficiencies, as well as to assess factors like noise and operational speed. In this work, we establish a mathematical framework for utilizing thermodynamic processes to perform fundamental operations, including addition, subtraction, multiplication, and division. We highlight the use of chemical reactions as potential computational units and explore synthetic chemical and biochemical systems as practical implementations. Additionally, we demonstrate how these principles can be applied to solving complex mathematical problems, such as ordinary differential equations (ODEs) and suggest the necessary components to implement the thermodynamic computing framework using chemical reactions based in a microfluidic device. This work enhances our understanding of thermodynamic processes for natural computing as a basis for scalable, energy-efficient computation in paradigm disruptive next-generation systems.</p>
+
+      </div> <!-- /.col-lg-12 -->
+    </div> <!-- /.row -->
+  </div> <!-- /.container -->
+</section>
+
